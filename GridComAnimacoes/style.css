@@ -1,0 +1,110 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --bg-colA: hsla(218, 17%, 62%, 1);
+  --bg-title: hsl(275, 18%, 79%);
+}
+
+.container {
+  font-family: 'Roboto', sans-serif;
+
+  display: flex;
+
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* ##################### COL-A ########## */
+
+.colA {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  max-width: 37.7rem;
+  background: var(--bg-colA);
+
+  text-align: center;
+}
+
+
+.colA img {
+  width: 21.5rem;
+
+  margin-bottom: 3.2rem;
+  margin-top: 3.2rem;
+}
+
+.colA h1 {
+  font-family: 'Staatliches', cursive;
+  font-weight: 400;
+  font-size: 4.8rem;
+  line-height: 3.4rem;
+
+  color: white;
+
+  margin-bottom: 3.2rem;
+
+  background: var(--bg-title);
+  width: 100%;
+
+  padding: 2.1rem 7.3rem 2.1rem 7.3rem;
+}
+
+.colA p {
+  font-size: 2rem;
+  line-height: 2rem;
+  
+  color: white;
+
+  padding: 5.2rem 4.8rem 12.5rem 5.4rem;
+  
+}
+
+/* ##################### COL-B ########## */
+
+.colB { 
+  display: grid;
+
+  grid-template-areas: "A B C"
+  "D E F";
+
+  max-width: 90.3rem;
+
+  padding: 6.4rem 8.1rem 12.4rem 9.8rem;
+  gap: 0;
+}
+
+
+.colB:nth-child(1) {
+  grid-area: A;
+  padding: 0;
+}
+
+.colB:nth-child(2) {
+  grid-area: B;
+  padding: 0;
+}
+
+.colB:nth-child(3) {
+  grid-area: C;
+}
+
+.colB:nth-child(4) {
+  grid-area: D;
+}
+
+.colB:nth-child(5){
+  grid-area: E;
+}
+
+.colB:nth-child(6) {
+  grid-area: F;
+}
